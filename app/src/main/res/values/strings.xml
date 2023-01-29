@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Wake up cycle alarm</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Set alarm time</string>
+    <string name="second_fragment_label">Wake up time</string>
+
+    <string name="button_wake_up">button_wake_placeholder</string>
+    <string name="button_cancel">Cancel</string>
+
+    <string name="textview_current_time_label">Current time</string>
+    <string name="textview_current_time">textview_current_time</string>
+    <string name="textview_wake_up_time_label">Wake up time</string>
+    <string name="textview_wake_up_time">textview_wake_up_time</string>
+</resources>
