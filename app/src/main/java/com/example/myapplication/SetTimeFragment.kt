@@ -10,7 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
-import com.example.myapplication.databinding.FragmentFirstBinding
+import com.example.myapplication.databinding.FragmentSetTimeBinding
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
@@ -22,7 +22,7 @@ class SetTimeFragment : Fragment() {
     private lateinit var alarmManager: AlarmManager
     private lateinit var pendingIntent: PendingIntent
 
-    private var _binding: FragmentFirstBinding? = null
+    private var _binding: FragmentSetTimeBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -33,7 +33,7 @@ class SetTimeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentFirstBinding.inflate(inflater, container, false)
+        _binding = FragmentSetTimeBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -51,28 +51,28 @@ class SetTimeFragment : Fragment() {
         binding.buttonWakeUp6.text = "${getTime(9, 0)} (9 hours)"
 
         binding.buttonWakeUp1.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_SetTimeFragment_to_ViewAlarmFragment)
             Toast.makeText(context, binding.buttonWakeUp1.text, Toast.LENGTH_SHORT).show()
         }
         binding.buttonWakeUp2.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_SetTimeFragment_to_ViewAlarmFragment)
             Toast.makeText(context, binding.buttonWakeUp2.text, Toast.LENGTH_SHORT).show()
         }
         binding.buttonWakeUp3.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_SetTimeFragment_to_ViewAlarmFragment)
             Toast.makeText(context, binding.buttonWakeUp3.text, Toast.LENGTH_SHORT).show()
         }
         binding.buttonWakeUp4.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_SetTimeFragment_to_ViewAlarmFragment)
             Toast.makeText(context, binding.buttonWakeUp4.text, Toast.LENGTH_SHORT).show()
         }
         binding.buttonWakeUp5.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_SetTimeFragment_to_ViewAlarmFragment)
             Toast.makeText(context, binding.buttonWakeUp5.text, Toast.LENGTH_SHORT).show()
         }
 
         binding.buttonWakeUp6.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_SetTimeFragment_to_ViewAlarmFragment)
             Toast.makeText(context, binding.buttonWakeUp6.text, Toast.LENGTH_SHORT).show()
         }
     }
