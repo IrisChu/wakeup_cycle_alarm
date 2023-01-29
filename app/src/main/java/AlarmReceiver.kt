@@ -12,7 +12,7 @@ class AlarmReceiver : BroadcastReceiver() {
         val alarmIntent = Intent(context, ViewAlarmFragment::class.java).let { intent ->
             PendingIntent.getActivity(context, 0, intent, 0)
         }
-        val alarmTime = intent.getLongExtra("alarmTime", 0)
+        val alarmTime = intent.getLongExtra("alarmTimeMillis", 0)
 
         alarmManager.setExact(AlarmManager.RTC_WAKEUP, alarmTime, alarmIntent)
     }
